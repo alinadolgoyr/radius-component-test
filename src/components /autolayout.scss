@@ -1,0 +1,98 @@
+@import '../breakpoints.scss';
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #FFFFFF;
+    justify-content:  center;
+    align-items: center;
+    margin: 10px;
+    font-family:'RiformaLL-Regular';
+    padding: 80px 16px;
+    
+    @include md {
+        flex-direction: row;
+        padding: 0;
+        padding: 80px 32px;
+    }
+    
+    @include lg {
+        height: 692px;
+        width: 1280px;
+        margin: 50px;
+        padding: 104px 70px;
+       }
+}
+
+
+.image {
+    height: 35%;
+    @include md {
+        height: auto;
+        width: 30vh;
+        padding-right: 32px;
+    }
+    @include lg {
+        margin-right: 32px;
+        height: 484px;
+        width: 43%;
+    }
+}
+
+.image img {
+    width:100%;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    margin-top: 32px;
+    @include md {
+        width: 50vh;
+    }
+    @include lg {
+        height: 484px;
+        margin-top: 0;
+        width: 43%;
+    }
+}
+
+.title {
+    text-align: left;
+    font-size: 20px;
+    line-height: 150%;
+    width: 100%;
+    @include lg {
+        font-size: 24px;
+    }
+
+}
+
+.text1 {
+    text-align: left;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    @include md {
+        font-size: 64px;
+    }
+    @include lg {
+        font-size: 80px;
+        margin-top: 0;
+    }
+}
+
+.text2 {
+  text-align: left;
+  color: #656565;
+  font-size: 20px;
+  line-height: 150%;
+  @include lg {
+    font-size: 24px;
+  }
+}
