@@ -1,11 +1,11 @@
 @import '../breakpoints.scss';
-
+@import '../variables.scss';
 
 .container {
     display: flex;
     flex-direction: column;
     position: absolute;
-    background-color: #FFFFFF;
+    background-color: white;
     justify-content:  center;
     align-items: center;
     margin: 10px;
@@ -13,7 +13,7 @@
     padding: 80px 16px;
     
     @include md {
-        flex-direction: row;
+        flex-direction: row-reverse;
         padding: 0;
         padding: 80px 32px;
     }
