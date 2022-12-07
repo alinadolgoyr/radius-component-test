@@ -1,11 +1,11 @@
-@import '../breakpoints.scss';
-@import '../variables.scss';
+@import '../../breakpoints.scss';
+@import '../../../newVars1.scss';
 
 .container {
     display: flex;
     flex-direction: column;
     position: absolute;
-    background-color: white;
+    background-color: $radius-core-neutral-white;
     justify-content:  center;
     align-items: center;
     margin: 10px;
@@ -62,17 +62,19 @@
 }
 
 .title {
+    color: $radius-core-primary-900;
     text-align: left;
     font-size: 20px;
     line-height: 150%;
     width: 100%;
     @include lg {
-        font-size: 24px;
+        font-size: $radius-core-fontsize-600;
     }
 
 }
 
 .text1 {
+    color: $radius-core-primary-900;
     text-align: left;
     font-size: 40px;
     font-weight: bold;

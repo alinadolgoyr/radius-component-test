@@ -1,5 +1,5 @@
+import illustration from '../../assets/illustration.png'
 import './autolayout.scss'
-import illustration from '../assets/illustration.png'
 
 const AutoLayout = () => {
     return (
